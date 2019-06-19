@@ -19,6 +19,7 @@ namespace Jenkins.Supervisor
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseUrls("http://localhost:8084")
                 .UseStartup<Startup>();
     }
 }
